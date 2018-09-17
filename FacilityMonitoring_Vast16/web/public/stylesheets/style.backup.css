@@ -1,0 +1,160 @@
+:root {
+    --border: rgb(8,52,123);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    margin-left: 0;
+    margin-top: 0;
+}
+.top{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(8,52,123);
+}
+.bottom{
+    height: 90%;
+    width: 100%;
+
+}
+.bottomLeft{
+    float:left;
+    height:100%;
+    width: 72.7%;
+    border-right: 1px solid var(--border);
+}
+.bottomRight{
+    float:left;
+    height: 100%;
+    width: 27.3%;
+    border-left: 1px solid var(--border);
+}
+.options{
+    height: 4.7%;
+    width: 100%;
+    background-color: rgb(20,120,200);
+}
+.mainTimeChart{
+    height: 22.7%;
+    width: 100%;
+    background-color: rgb(215,215,215);
+    border-bottom: 1px solid var(--border);
+}
+.graph{
+    height: 49.9%;
+    width: 100%
+}
+.nodeTimeChart{
+    height: 22.7%;
+    width: 100%;
+    background-color: rgb(215,215,215);
+    border-top: 1px solid var(--border);
+
+}
+.optionTab{
+    height: 4.7%;
+    width: 100%;
+}
+.scatterDiagram{
+    height: 46.9%;
+    width: 100%;
+    background-color: rgb(190,190,190);
+    border-bottom: 1px solid var(--border);
+}
+.subChart{
+    height: 25.7%;
+    width: 100%;
+    background-color: rgb(190,190,190);
+}
+.room{
+    height:22.7%;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    background-color: rgb(190,190,190);
+}
+.ruler{
+    height:0;
+    width:0;
+    visibility:hidden;
+    font-family: "Microsoft YaHei", serif;
+    font-size:12px;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.selectDiv cite{
+    height:24px;
+    line-height:24px;
+    display:block;
+    cursor:pointer;
+    font-style:normal;
+    background:url(xjt_new.png) no-repeat right center;
+}
+.selectDiv ul{
+    position:absolute;
+    z-index:20000;
+    margin-top:-1px;
+    display:none;
+}
+.selectDiv ul li{
+    /*width: 400px;*/
+    height:24px;
+    line-height:24px;
+}
+.selectDiv ul li a{
+    background-color: rgb(50,70,90);
+    color: #ffffff;
+    display:block;
+    height:24px;
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+}
+.selectDiv ul li a:hover{
+    background-color:rgb(147,165,167);
+}
+.svg{
+    height: 100%;
+    width: 100%;
+}
+.axisSVG{
+    height: 100%;
+    width: 100%;
+}
+.nodeAxisSVG{
+    height: 100%;
+    width: 100%;
+}
+
+.area {
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+    clip-path: url(#clip);
+}
+
+.zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+}
+.axis path,
+.axis line{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
